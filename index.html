@@ -73,11 +73,10 @@
 			<section>Once upon a time, I had a dream that someone loved me for who I am. It came to reality the day you came into my life and love me for who I am. I love you.
 
 			</div>
-			<audio id="mySound" src="http://truviconline.com/audio/rab.mp3"></audio>
 				<audio class="song" controls loop>
-<source src="rab.mp3">
-</source>
-</audio>
+					<source src="rab.mp3">
+					</source>
+				</audio>
 				
 		</div>
 
@@ -99,15 +98,13 @@
 			});
 		</script>
 	
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function () {
+			 	$('.song')[0].play();
+			});
+		</script>
 			
-<script>$(document).ready(function () {
-        	 $('.song')[0].play();
-});
 
- 
-
-			
-    </script>
 	</body>
 </html>
