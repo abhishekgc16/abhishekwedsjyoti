@@ -25,6 +25,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+			<section><button class="btn btn-primary" style="font-size: 60px;" id="play">Music</button></section>
 			<section>7 years ago...</section>
 
 			<section>2014: We came close to being one ! </section>
@@ -73,17 +74,14 @@
 			<section>Once upon a time, I had a dream that someone loved me for who I am. It came to reality the day you came into my life and love me for who I am. I love you.
 
 			</div>
-				<audio class="song" controls loop hidden>
-					<source src="https://www.truviconline.com/audio/rab.mp3" hidden>
-					</source>
-				</audio>
+			<audio id="sound_tag" src="rab.mp3" preload="auto"></audio>
 				
 		</div>
 
 
 		
 
-    
+    		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
@@ -99,9 +97,9 @@
 		</script>
 	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-		<script>
-			$(document).ready(function () {
-			 	$('.song')[0].play();
+		<script type="text/javascript">
+			$('#play').click(function(){
+			$('#sound_tag')[0].play();
 			});
 		</script>
 			
