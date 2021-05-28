@@ -95,14 +95,13 @@
 		</script>
 		<script>
 			
-			var nothing = new Audio('http://truviconline.com/audio/rab.mp3')
-			window.onload = function() {
-nothing.play()
-}
-			 window.audio = new Audio( 'http://truviconline.com/audio/rab.mp3' 
-$('body').on('mouseleave', function(){
-    audio.play()
-})
+			$('#play').click(function(){
+var audio = $('.song')[0];
+        audio.play();
+				});
+			<audio class="song" controls loop>
+<source src="rab.mp3">
+</source>
     </script>
 	</body>
 </html>
